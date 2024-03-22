@@ -1,6 +1,6 @@
 import React from "react"
 import "../../App.css"
-import templaterow from "../../models/templaterow.model"
+import {templaterow} from "../../models"
 import profilepic from "../../resources/nosatprofile.png"
 import wellies from '../../resources/wellington.png'
 import pagetemplate from "../../templates/page/page.template"

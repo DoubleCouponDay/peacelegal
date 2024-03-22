@@ -6,7 +6,7 @@ import { providerpath } from "../../pages/fees/fees.presenter"
 import { contactpath } from "../../pages/contact/contact.presenter"
 import '../../App.css'
 import './navigator.css'
-import buttonstate from "../../models/buttonstate.model"
+import {buttonstate} from "../../models"
 import talksymbol from '../../resources/smashicons/006-home-message.svg'
 import mailsymbol from '../../resources/smashicons/026-email-5.svg'
 import passportsymbol from '../../resources/smashicons/040-profile.svg'

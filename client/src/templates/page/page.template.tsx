@@ -1,6 +1,6 @@
 import React, { CSSProperties } from 'react'
 import '../../App.css'
-import templaterow from '../../models/templaterow.model'
+import { templaterow } from '../../models'
 import './page.css'
 import Header from '../../components/header/header.presenter'
 
