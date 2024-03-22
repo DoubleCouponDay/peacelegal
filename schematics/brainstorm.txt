@@ -1,0 +1,62 @@
+pages
+	home
+
+	contact
+		submission form
+		
+		route through mailchimp
+		
+		recaptcha v3
+		
+		provide phone number after submitting
+		
+		Azure cognitive services
+			content moderator
+				practically free
+				
+			sentiment analyis
+				practically free
+	
+	fees
+	
+	services
+	
+icons
+	blue outlines with round border
+
+	options
+		ikons
+		
+		dripicons
+		
+style
+	stripes at angle for visual relief
+	
+	white with blue horizontal borders
+	
+wireframes
+	choose the layout of each page
+	
+domain
+	www.mountainlaw.co.nz
+		$50 per year
+		
+	www.mountainlaw.services
+		$6 per year
+		
+	www.mountainlaw.legal
+		$50 per year
+	
+fonts
+	sharp and intelligent
+	
+	options
+		neue helvetica
+		
+		mrs eaves
+		
+		Civane
+	
+	cant be toronto subway as that would be copying donnelsherry.co.nz
+	
+	

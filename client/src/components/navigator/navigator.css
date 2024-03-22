@@ -1,0 +1,42 @@
+
+
+.nav-item {
+    margin: 10px;
+    padding: 10px;
+    user-select: none;
+    text-decoration: none;
+    color: black;
+    font-size: 40px;
+    font-weight: bolder;
+    display: flex;
+}
+
+.nav-title {
+    font-size: 100px;
+    user-select: none;
+    text-decoration: none;
+    color: black;
+}
+.divider-container {
+    width: var(--page-width);
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    text-align: center;
+}
+
+.buttons-container {
+    width: var(--page-width);
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+    justify-content: center;
+}
+
+.icon {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}

@@ -1,0 +1,30 @@
+@font-face {
+    font-family: ultralight;
+    src: url("./resources/helveticaneue-ultralight.ttf");
+}
+
+html, body {
+    font-family: ultralight;
+    
+}
+
+:root {
+    --page-width: 700px;
+    --border-colour: rgb(75, 202, 204);
+}
+
+.divider-line {    
+    height: 2px;
+    background-color: var(--border-colour);
+    margin: 10px;
+    display: block;
+}
+
+.font {
+    user-select: none;
+    text-decoration: none;
+    color: black;
+    font-family: ultralight;
+    font-size: 20px;
+    font-weight: bold;
+}
