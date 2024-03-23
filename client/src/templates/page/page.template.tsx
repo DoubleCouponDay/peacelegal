@@ -4,42 +4,46 @@ import { templaterow } from '../../models'
 import './page.css'
 import Header from '../../components/header/header.presenter'
 
-const automaticmarginvalue = "auto"
+const sidemargin = '20px'
+const automargin = 'auto'
 
 export default function pagetemplate(title:string, data: templaterow[]): JSX.Element {
     let templaterows: JSX.Element[] = data.map((item, index) => {
-        let firstrowitem: JSX.Element
-        let secondrowitem: JSX.Element
+        let rowitem: JSX.Element
 
         if(index % 2 === 0) {
             let imgstyle: CSSProperties = {
-                marginLeft: automaticmarginvalue
+                marginLeft: sidemargin,
+				float: 'right'
             }
 
             let paragraphstyle: CSSProperties = {
-                marginRight: automaticmarginvalue
+                marginLeft: sidemargin,
+				float: 'left'
             }
-            firstrowitem = getparagraph(item.paragraph, paragraphstyle)
-            secondrowitem = getimage(item.imagepath, imgstyle)
+            const image = getimage(item.imagepath, imgstyle)
+			rowitem = getparagraph(item.paragraph, paragraphstyle, image)
         }
 
         else {
             let imgstyle: CSSProperties = {
-                marginRight: automaticmarginvalue
+                marginRight: sidemargin,
+				float: 'left'
             }
-            
+
             let paragraphstyle: CSSProperties = {
-                marginLeft: automaticmarginvalue
+                marginLeft: sidemargin,
+				float: 'right'
             }
-            firstrowitem = getimage(item.imagepath, imgstyle)
-            secondrowitem = getparagraph(item.paragraph, paragraphstyle)
+            const image = getimage(item.imagepath, imgstyle)
+            rowitem = getparagraph(item.paragraph, paragraphstyle, image)
         }
 
         return (<div className="page-row" key={index}>
-            {firstrowitem}
-            {secondrowitem}
+			{rowitem}
         </div>)
     })
+
     return (                
         <div>
             {Header(title)}
@@ -48,16 +52,17 @@ export default function pagetemplate(title:string, data: templaterow[]): JSX.Ele
     )
 }
 
-const getparagraph = (text: string, customstyle: CSSProperties): JSX.Element => (
-    <div className="page-paragraph"
-        style={customstyle}>                    
-        {text}
-    </div>
-)
-
 const getimage = (path: string, customstyle: CSSProperties): JSX.Element => (
     <img src={path}
         className="page-paragraph-image"        
         draggable="false"
         style={customstyle} />
+)
+
+const getparagraph = (text: string, customstyle: CSSProperties, image: JSX.Element): JSX.Element => (
+    <div className="page-paragraph"
+        style={customstyle}>
+		{image}
+        {text}
+    </div>
 )
